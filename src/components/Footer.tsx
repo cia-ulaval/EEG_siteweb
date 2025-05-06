@@ -1,8 +1,9 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 function Footer() {
+  // @ts-ignore
   return (
-    <footer className="bg-black/60 border-t border-red-500/20 py-12 mt-20">
+    <footer className="dark:bg-black/60 bg-white/20 border-t border-red-500/20 py-12 mt-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -13,7 +14,7 @@ function Footer() {
               Shape the unknown, code the impossible.
             </p>
           </div>
-          <div>
+          <div className="">
             <h4 className="text-lg font-semibold text-red-400 mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a
