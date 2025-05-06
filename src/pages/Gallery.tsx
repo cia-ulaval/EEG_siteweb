@@ -1,214 +1,64 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
-
 function Gallery() {
-  const images = {
-    formation: [
-      {
-        src: "/formation/tuto2.jpg",
-        desc: "First CIA tutorial",
-      },
-    ],
-    competition: [
-      {
-        src: "/competition/competition-1.jpg",
-        desc: "Competition winners 2024",
-      },
-      {
-        src: "/competition/competition-2.jpg",
-        desc: "During competition",
-      },
-      {
-        src: "/competition/competition-3.jpg",
-        desc: "During competition 2",
-      },
-      {
-        src: "/competition/competition-a2024-1.jpg",
-        desc: "During competition 3",
-      },
-    ],
-    project: [
-      {
-        src: "/project/club2024.png",
-        desc: "First meeting for flapeeg project 2024",
-      },
-      {
-        src: "/project/clubrencontre.png",
-        desc: "Second meeting for flapeeg project 2024",
-      },
-      {
-        src: "/project/f1tenth.jpg",
-        desc: "F1Tenth meeting",
-      },
-      {
-        src: "/project/f1tenthcar.png",
-        desc: "F1Tenth car",
-      },
-      {
-        src: "/project/flappycard.jpg",
-        desc: "Flapeeg meeting winter 2025",
-      },
-    ],
-    community: [
-      {
-        src: "/implication/filleclub.png",
-        desc: "Women and AI club",
-      },
-      {
-        src: "/implication/eeg-presentation.jpg",
-        desc: "EEG presentation to students",
-      },
-      {
-        src: "/implication/flappyeegmain.jpeg",
-        desc: "Executive team with flapeeg project",
-      },
-      {
-        src: "/implication/front-image.png",
-        desc: "CIA presentation to students",
-      },
-      {
-        src: "/implication/kalven-presenter.jpg",
-        desc: "Outside presentation",
-      },
-      {
-        src: "/implication/kiosque.jpg",
-        desc: "CIA stand presentation",
-      },
-      {
-        src: "/implication/kiosque.jpeg",
-        desc: "CIA stand presentation 2",
-      },
-      {
-        src: "/implication/presentation.png",
-        desc: "CIA presentation to students 2",
-      },
-      {
-        src: "/implication/rencontrecia.jpeg",
-        desc: "CIA presentation to students 3",
-      },
-      {
-        src: "/implication/table.jpeg",
-        desc: "Executive team at presentation stand",
-      },
-      {
-        src: "/implication/table2.jpeg",
-        desc: "Executive team at presentation stand 2",
-      },
-      {
-        src: "/implication/table3.jpeg",
-        desc: "Executive team at presentation stand 3",
-      },
-      {
-        src: "/implication/testclub.png",
-        desc: "EEG signal demonstration",
-      },
-    ],
-  };
+  const images = [
+    {
+      src: "/img/club2024.png",
+      desc: "Beautiful Landscape",
+    },
+    {
+      src: "/img/clubrencontre.png",
+      desc: "Mountain View",
+    },
+    {
+      src: "/img/competition.png",
+      desc: "Sunset Over Water",
+    },
+    {
+      src: "/img/f1tenth.jpg",
+      desc: "Forest Pathway",
+    },
+    {
+      src: "/img/presentation.png",
+      desc: "City Lights",
+    },
+    {
+      src: "/img/testclub.png",
+      desc: "Snowy Mountains",
+    },
+    {
+      src: "/img/tuto2.jpg",
+      desc: "Snowy Mountains",
+    },
+    {
+      src: "/img/rencontrecia.jpeg",
+      desc: "Snowy Mountains",
+    },
+    {
+      src: "/img/cialocal.jpg",
+      desc: "Snowy Mountains",
+    },
+  ];
 
-  const renderImages = (
-    images: { src: string; desc: string }[],
-    title: string
-  ) => (
-    <motion.div
-      className="mb-16"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      role="region"
-      aria-labelledby={`${title.toLowerCase().replace(/\s+/g, "-")}-heading`}
-    >
-      <h2
-        id={`${title.toLowerCase().replace(/\s+/g, "-")}-heading`}
-        className="text-3xl font-semibold gradient-text mb-8 pt-12 sm:pt-20"
-      >
-        {title}
-      </h2>
-      <div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6"
-        role="list"
-      >
+  return (
+    <section className="container mx-auto p-4 text-center">
+      <h1 className="text-5xl font-bold gradient-text mb-6">Gallery</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
-          <motion.div
+          <div
             key={index}
             className="relative overflow-hidden rounded-lg shadow-lg group"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            role="listitem"
           >
             <img
               src={image.src}
-              alt={image.desc || `${title} image ${index + 1}`}
-              className="w-full h-40 sm:h-48 md:h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+              alt={`Gallery image ${index + 1}`}
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div
-              className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-center p-2 text-xs sm:text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              aria-hidden="true"
-            >
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               {image.desc}
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
-    </motion.div>
-  );
-
-  return (
-    <>
-      <Head>
-        <title>
-          Gallery - Explore EEG Projects, Competitions, and Community Events
-        </title>
-        <meta
-          name="description"
-          content="Explore our gallery showcasing EEG projects, competitions, and community events. Learn more about our journey in AI, EEG technology, and community impact."
-        />
-        <meta
-          name="keywords"
-          content="EEG, gallery, projects, competitions, community, AI, events, formations"
-        />
-        <meta name="author" content="Dereck Bélanger" />
-        <link rel="canonical" href="https://cialaval.vercel.app/gallery" />
-        <meta
-          property="og:title"
-          content="Gallery - EEG Projects and Competitions"
-        />
-        <meta
-          property="og:description"
-          content="Explore EEG projects, competitions, and community involvement in our dynamic gallery."
-        />
-        <meta property="og:image" content="/banner/cia_ico.ico" />
-        <meta property="og:url" content="https://cialaval.vercel.app/gallery" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Gallery - EEG Projects and Competitions"
-        />
-        <meta
-          name="twitter:description"
-          content="Discover the EEG gallery featuring projects, competitions, community involvement, and formation discussions."
-        />
-        <meta name="twitter:image" content="/banner/cia_ico.ico" />
-      </Head>
-      <motion.section
-        className="container mx-auto p-4 text-center rounded-lg"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        role="main"
-        aria-label="Gallery showcasing EEG projects, competitions, and community involvement"
-      >
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-600">
-            EEG Projects, Competitions, and Community Gallery
-          </span>
-        </h1>
-        {renderImages(images.formation, "Formations/Discussions")}
-        {renderImages(images.competition, "Competitions")}
-        {renderImages(images.project, "Projects")}
-        {renderImages(images.community, "Community Implications")}
-      </motion.section>
-    </>
+    </section>
   );
 }
 
