@@ -13,7 +13,7 @@ function Footer() {
               Shape the unknown, code the impossible.
             </p>
           </div>
-          <div className="md:col-start-4 md:col-end-5 flex flex-col items-center">
+          <div className="sm:col-start-4 sm:col-end-5 flex flex-col items-center">
             <h4 className="text-lg font-semibold gradient-text mb-4 text-center w-full">Connect</h4>
             <div className="flex space-x-6 bg-black/10 rounded-full px-6 py-3 shadow-lg">
               <a
