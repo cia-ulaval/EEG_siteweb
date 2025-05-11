@@ -58,7 +58,7 @@ const cardData2 = [
   {
     title: "Dereck Bélanger",
     text: "CIA Website Manager",
-    imgSrc: "/img/Dereck.HEIC",
+    imgSrc: "/img/Dereck.png",
     linkedIn: "https://www.linkedin.com/in/dereck-bélanger-437259338/",
   },
   {
@@ -91,7 +91,7 @@ const cardData3 = [
   {
     title: "Dereck Bélanger",
     text: "CIA Website Manager",
-    imgSrc: "/Dereck.HEIC",
+    imgSrc: "img/Dereck.png",
     linkedIn: "https://www.linkedin.com/in/dereck-bélanger-437259338/",
   },
 ];
