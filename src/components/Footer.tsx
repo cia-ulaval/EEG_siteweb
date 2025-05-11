@@ -1,7 +1,6 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 function Footer() {
-  // @ts-ignore
   return (
     <footer className="dark:bg-black/60 bg-white/20 border-t border-red-500/20 py-12 mt-20">
       <div className="max-w-7xl mx-auto px-4">
@@ -14,26 +13,29 @@ function Footer() {
               Shape the unknown, code the impossible.
             </p>
           </div>
-          <div className="">
-            <h4 className="text-lg font-semibold text-red-400 mb-4">Connect</h4>
-            <div className="flex space-x-4">
+          <div className="md:col-start-4 md:col-end-5 flex flex-col items-center">
+            <h4 className="text-lg font-semibold gradient-text mb-4 text-center w-full">Connect</h4>
+            <div className="flex space-x-6 bg-black/10 rounded-full px-6 py-3 shadow-lg">
               <a
                 href="https://www.instagram.com/ciaulaval/"
-                className="text-gray-400 hover:text-rose-500/60 transition-colors"
+                className="text-gray-400 hover:text-rose-500/80 transition-colors"
+                aria-label="Instagram"
               >
-                <Instagram className="w-6 h-6" />
+                <Instagram className="w-7 h-7" />
               </a>
               <a
                 href="https://www.linkedin.com/company/cia-ulaval/"
-                className="text-gray-400 hover:text-rose-500/60 transition-colors"
+                className="text-gray-400 hover:text-rose-500/80 transition-colors"
+                aria-label="LinkedIn"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-7 h-7" />
               </a>
               <a
                 href="https://www.facebook.com/people/Club-dintelligence-artificielle-de-lUniversité-Laval/100089798911416/?rdid=lgzUe6mitaRXBT9H&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AqQ3bCSQp"
-                className="text-gray-400 hover:text-rose-500/60 transition-colors"
+                className="text-gray-400 hover:text-rose-500/80 transition-colors"
+                aria-label="Facebook"
               >
-                <Facebook className="w-6 h-6" />
+                <Facebook className="w-7 h-7" />
               </a>
             </div>
           </div>
