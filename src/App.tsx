@@ -18,7 +18,7 @@ import JoinUs from "./pages/JoinUs";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-b from-black via-red-800/20 to-black">
+      <div className="bg-white/100 dark:bg-black dark:via-red-800/20 min-h-screen dark:bg-gradient-to-b dark:from-black dark:to-black">
         <ScrollToTop />
         <Navbar />
         <Routes>
