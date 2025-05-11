@@ -81,7 +81,7 @@ const cardData = [
   {
     title: "Dereck Bélanger",
     text: "CIA Website Manager",
-    imgSrc: "/portrait/Dereck.HEIC",
+    imgSrc: "/portrait/Dereck.png",
     linkedIn: "https://www.linkedin.com/in/dereck-bélanger-437259338/",
   },
 ];
@@ -135,7 +135,7 @@ const Management = () => {
                   <Card.Title className="text-gray-200">
                     {card.title}
                   </Card.Title>
-                  <Card.Text className="text-gray-400">{card.text}</Card.Text>
+                  <Card.Text className="text-gray-200">{card.text}</Card.Text>
                 </Card.Body>
               </Card>
             </motion.a>

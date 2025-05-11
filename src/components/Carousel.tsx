@@ -8,7 +8,7 @@ const images = [
 ];
 export default function InfiniteScrollBanner() {
   return (
-    <div className="scroll-banner relative w-full bg-black py-4 overflow-hidden">
+    <div className="scroll-banner relative w-full dark:bg-black bg-white/100 py-4 overflow-hidden">
       <motion.div
         className="flex"
         animate={{

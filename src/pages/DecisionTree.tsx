@@ -47,7 +47,7 @@ const TeamSection = () => (
       The Team
     </h2>
     <motion.div
-      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-6 px-4 md:px-6"
+      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6 px-4 md:px-6"
       initial="hidden"
       animate="visible"
       variants={fadeInVariants}
@@ -63,7 +63,7 @@ const TeamSection = () => (
           <div className="text-red-400 mb-2 md:mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
             {member.icon}
           </div>
-          <h3 className="text-base md:text-xl font-bold text-white mb-1">
+          <h3 className="text-base md:text-xl font-bold dark:text-white text-gray-700 mb-1">
             {member.title}
           </h3>
         </motion.div>

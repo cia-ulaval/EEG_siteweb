@@ -188,7 +188,7 @@ function FlapEEG() {
             <h2 className="text-2xl sm:text-3xl font-bold gradient-text text-center mb-8 sm:mb-12">
               Meet the Team Behind FlapEEG
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-6 px-4 md:px-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 px-4 md:px-6">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={index}
@@ -200,7 +200,7 @@ function FlapEEG() {
                   <div className="text-red-400 mb-2 md:mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
                     {member.icon}
                   </div>
-                  <h3 className="text-base md:text-xl font-bold text-white mb-1">
+                  <h3 className="text-base md:text-xl font-bold dark:text-white text-gray-700 mb-1">
                     {member.title}
                   </h3>
                   <p className="text-gray-400 text-xs md:text-sm">

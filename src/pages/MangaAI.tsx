@@ -108,12 +108,12 @@ const ProcessStep = ({ number, title, description }: ProcessStepProps) => (
     viewport={{ once: true }}
   >
     <div className="flex-shrink-0">
-      <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-red-500 to-red-800 flex items-center justify-center text-white font-bold text-sm md:text-base">
+      <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-red-500 to-red-800 flex items-center justify-center dark:text-white text-gray-700 font-bold text-sm md:text-base">
         {number}
       </div>
     </div>
     <div>
-      <h4 className="text-lg md:text-xl font-semibold text-white mb-1">
+      <h4 className="text-lg md:text-xl font-semibold dark:text-white text-gray-700 mb-1">
         {title}
       </h4>
       <p className="text-sm md:text-base text-gray-400">{description}</p>
@@ -162,7 +162,7 @@ const TeamSection = () => (
           <div className="text-red-400 mb-2 md:mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
             {member.icon}
           </div>
-          <h3 className="text-base md:text-xl font-bold text-white mb-1">
+          <h3 className="text-base md:text-xl font-bold dark:text-white text-gray-600 mb-1">
             {member.title}
           </h3>
           <p className="text-red-400/80 text-xs md:text-sm mb-1 md:mb-2">
@@ -218,7 +218,7 @@ function MangaAI() {
                 Translator
               </span>
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6">
+            <h2 className="text-2xl md:text-4xl font-bold dark:text-white text-gray-700 mb-4 md:mb-6">
               AI-Powered Manga Translation
             </h2>
           </motion.div>
@@ -234,7 +234,7 @@ function MangaAI() {
                 transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
               >
                 {feature.icon}
-                <span className="text-xs md:text-sm font-medium text-white whitespace-nowrap">
+                <span className="text-xs md:text-sm font-medium dark:text-white text-gray-700 whitespace-nowrap">
                   {feature.title}
                 </span>
               </motion.div>
@@ -262,7 +262,7 @@ function MangaAI() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-500">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600">
                 Our Approach
               </h3>
 
@@ -289,7 +289,7 @@ function MangaAI() {
                 />
               </div>
 
-              <h4 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center text-red-300">
+              <h4 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600">
                 Development Process
               </h4>
 
@@ -323,7 +323,7 @@ function MangaAI() {
               />
 
               <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-red-800/20">
-                <h4 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center text-red-300">
+                <h4 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600">
                   Future Enhancements
                 </h4>
 

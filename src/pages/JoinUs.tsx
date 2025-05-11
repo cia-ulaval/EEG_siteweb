@@ -37,7 +37,7 @@ function JoinUs() {
                 Join Us - Be Part of Our Team
               </span>
             </h1>
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold dark:text-white text-gray-700 mb-6">
               Collaborate, Lead, and Grow with Us
             </h2>
           </motion.div>
@@ -50,7 +50,7 @@ function JoinUs() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg text-gray-400 mb-4">
+            <p className="text-lg dark:text-gray-500 text-gray-400 mb-4">
               Connect with us on Discord to stay updated and collaborate with
               the team.
             </p>
@@ -72,7 +72,7 @@ function JoinUs() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl font-bold dark:text-white text-gray-700 mb-4">
               Apply for Roles
             </h3>
             <p className="text-lg text-gray-400 mb-6">

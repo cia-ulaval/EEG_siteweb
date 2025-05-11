@@ -110,7 +110,7 @@ const TeamSection = () => (
           <div className="text-red-400 mb-2 md:mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
             {member.icon}
           </div>
-          <h3 className="text-base md:text-xl font-bold text-white mb-1">
+          <h3 className="text-base md:text-xl font-bold dark:text-white text-gray-700 mb-1">
             {member.title}
           </h3>
           <p className="text-gray-400 text-xs md:text-sm">{member.role}</p>
@@ -176,7 +176,7 @@ function Lenia() {
                 Lenia
               </span>
             </h1>
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold dark:text-white text-gray-700 mb-6">
               What is Lenia?
             </h2>
           </motion.div>
@@ -192,7 +192,7 @@ function Lenia() {
                 transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
               >
                 {feature.icon}
-                <span className="text-sm font-medium text-white">
+                <span className="text-sm font-medium dark:text-white text-gray-700">
                   {feature.title}
                 </span>
               </motion.div>

@@ -63,7 +63,7 @@ function Projects() {
         <div className="max-w-7xl mx-auto px-6 pb-16">
           <header className="text-center mb-16">
             <motion.h1
-              className="text-5xl font-extrabold text-white tracking-wide"
+              className="text-5xl font-extrabold dark:text-white text-black/100  tracking-wide"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -104,7 +104,7 @@ function Projects() {
                     }}
                   />
                   <div className="p-6 flex flex-col h-48">
-                    <h3 className="text-xl font-semibold text-gray-200 mb-2">
+                    <h3 className="text-xl font-semibold dark:text-gray-200 text-gray-700 mb-2">
                       {project.title}
                     </h3>
                     <p className="text-gray-400 mb-4 flex-grow overflow-hidden line-clamp-3">
